@@ -1,0 +1,10 @@
+{
+    "contact": {
+        "_id": 1,
+        "firstName": "Megan",
+        "lastName": "Wilson",
+        "email": "MeganKayner@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "07/22/1997"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "contact3": {
+        "_id": 3,
+        "firstName": "Arthur",
+        "lastName": "Wilson",
+        "email": "Arthur@gmail.com",
+        "favoriteColor": "Green",
+        "birthday": "05/13/2023"}
+}
