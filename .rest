@@ -2,10 +2,33 @@ GET http://localhost:3000 HTTP/1.1
 
 ###
 
-GET http://localhost:3000/awesome HTTP/1.1
+# Testing the get all contacts function
+GET http://localhost:3000/AllContacts HTTP/1.1
 
 ###
 
-GET https://new-wk63.onrender.com HTTP/1.1
+# Testing the get single contact by id function
+GET http://localhost:3000/65ac3004abaff1c0e7aebc2d HTTP/1.1
+
+###
+
+# Testing the get single contact by id function
+GET http://localhost:3000/65ac3015abaff1c0e7aebc2e HTTP/1.1
+
+###
+
+# Testing the get single contact by id function
+GET http://localhost:3000/65ac301cabaff1c0e7aebc2f HTTP/1.1
+
+###
+
+# Testing all contacts funtion at the render link
+GET https://w02personalassignment.onrender.com/AllContacts HTTP/1.1
+
+###
+
+# Testing one contact by id funtion at the render link
+GET https://w02personalassignment.onrender.com/65ac3004abaff1c0e7aebc2d HTTP/1.1
+
 
 
