@@ -1,9 +1,10 @@
-const awesomeFunction = (req, res, next) => {
-    res.json('Spencer Wilson');
-};
+const mongodb = require('../db/connect');
 
-const anotherPerson = (req, res, next) => {
-    res.json('Another person');
-};
+const getData = async(req, res, next) => {
+    const result = await mongodb.getDb().db().collection('contacts').find();
+    result.toArray().then((lists) => {
+        res.status(200).json(lists[0]);
+    });
+}
 
-module.exports = { awesomeFunction, anotherPerson};
+module.exports = {getData};
