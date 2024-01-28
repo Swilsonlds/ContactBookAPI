@@ -60,7 +60,7 @@ content-Type: application/json
 ###
 
 # Testing delete contact on local server
-DELETE http://localhost:3000/65b5a34f7c6cdf95e02a156e HTTP/1.1
+DELETE http://localhost:3000/contacts/65b5c88d625d7b109a4f476d HTTP/1.1
 
 ###
 
@@ -83,11 +83,11 @@ content-Type: application/json
 ###
 
 # Testing edit contact on production server
-PUT https://w02personalassignment.onrender.com/contacts/65b5a38df4d9e1a4cbeaff00 HTTP/1.1
+PUT https://w02personalassignment.onrender.com/contacts/65b5c91bdf66b9a17673effe HTTP/1.1
 content-Type: application/json
 
 {
-    "firstName": "Richard",
+    "firstName": "Richarddd",
     "lastName": "Wilson",
     "email": "William@gmail.com",
     "favoriteColor": "Green",
@@ -97,7 +97,7 @@ content-Type: application/json
 ###
 
 # Testing delete contact on production server
-DELETE https://w02personalassignment.onrender.com/65b5a38df4d9e1a4cbeaff00 HTTP/1.1
+DELETE https://w02personalassignment.onrender.com/contacts/65b5c91bdf66b9a17673effe HTTP/1.1
 
 ###
 
