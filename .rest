@@ -12,6 +12,11 @@ GET http://localhost:3000/65b59a03cb5e6eb4c05fb2f7 HTTP/1.1
 
 ###
 
+
+////////////////////////////////// PRODUCTION
+
+
+
 # Testing all contacts funtion at the render link
 GET https://w02personalassignment.onrender.com/AllContacts HTTP/1.1
 
@@ -22,12 +27,16 @@ GET https://w02personalassignment.onrender.com/65b59a03cb5e6eb4c05fb2f7 HTTP/1.1
 
 ###
 
+
+////////////////////////////////// LOCAL
+
+
 # Testing create contact on local server
 POST http://localhost:3000/contacts HTTP/1.1
 content-Type: application/json
 
 {
-    "firstName": "Megan",
+    "firstName": "Jmoney",
     "lastName": "Wilson",
     "email": "Megan@gmail.com",
     "favoriteColor": "Blue",
@@ -37,7 +46,7 @@ content-Type: application/json
 ###
 
 # Testing edit contact on local server
-PUT http://localhost:3000/contacts/65b59ac1cb5e6eb4c05fb2f9 HTTP/1.1
+PUT http://localhost:3000/contacts/65b5a34f7c6cdf95e02a156e HTTP/1.1
 content-Type: application/json
 
 {
@@ -51,9 +60,13 @@ content-Type: application/json
 ###
 
 # Testing delete contact on local server
-DELETE http://localhost:3000/65b59ac1cb5e6eb4c05fb2f9 HTTP/1.1
+DELETE http://localhost:3000/65b5a34f7c6cdf95e02a156e HTTP/1.1
 
 ###
+
+
+////////////////////////////////// PRODUCTION
+
 
 # Testing create contact on production server
 POST https://w02personalassignment.onrender.com/contacts HTTP/1.1
@@ -70,7 +83,7 @@ content-Type: application/json
 ###
 
 # Testing edit contact on production server
-PUT https://w02personalassignment.onrender.com/contacts/65b59aa5cb5e6eb4c05fb2f8 HTTP/1.1
+PUT https://w02personalassignment.onrender.com/contacts/65b5a38df4d9e1a4cbeaff00 HTTP/1.1
 content-Type: application/json
 
 {
@@ -84,7 +97,7 @@ content-Type: application/json
 ###
 
 # Testing delete contact on production server
-DELETE https://w02personalassignment.onrender.com/65b59f81e280ab7ae3264f79 HTTP/1.1
+DELETE https://w02personalassignment.onrender.com/65b5a38df4d9e1a4cbeaff00 HTTP/1.1
 
 ###
 
