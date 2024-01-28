@@ -37,7 +37,7 @@ content-Type: application/json
 ###
 
 # Testing edit contact on local server
-PUT http://localhost:3000/contacts/65b59ac1cb5e6eb4c05fb2f9HTTP/1.1
+PUT http://localhost:3000/contacts/65b59ac1cb5e6eb4c05fb2f9 HTTP/1.1
 content-Type: application/json
 
 {
@@ -56,13 +56,13 @@ DELETE http://localhost:3000/65b59ac1cb5e6eb4c05fb2f9 HTTP/1.1
 ###
 
 # Testing create contact on production server
-POST http://localhost:3000/contacts HTTP/1.1
+POST https://w02personalassignment.onrender.com/contacts HTTP/1.1
 content-Type: application/json
 
 {
-    "firstName": "Megan",
+    "firstName": "JMoney",
     "lastName": "Wilson",
-    "email": "Megan@gmail.com",
+    "email": "Jerey@gmail.com",
     "favoriteColor": "Blue",
     "birthday": "07/22/1997"
 }
@@ -70,11 +70,11 @@ content-Type: application/json
 ###
 
 # Testing edit contact on production server
-PUT http://localhost:3000/contacts/65b59ac1cb5e6eb4c05fb2f9HTTP/1.1
+PUT https://w02personalassignment.onrender.com/contacts/65b59aa5cb5e6eb4c05fb2f8 HTTP/1.1
 content-Type: application/json
 
 {
-    "firstName": "William",
+    "firstName": "Richard",
     "lastName": "Wilson",
     "email": "William@gmail.com",
     "favoriteColor": "Green",
@@ -84,7 +84,7 @@ content-Type: application/json
 ###
 
 # Testing delete contact on production server
-DELETE http://localhost:3000/65b59ac1cb5e6eb4c05fb2f9 HTTP/1.1
+DELETE https://w02personalassignment.onrender.com/65b59f81e280ab7ae3264f79 HTTP/1.1
 
 ###
 
