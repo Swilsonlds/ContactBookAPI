@@ -1,10 +1,6 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-const getData = (req, res, next) => {
-    res.json("Welcome");
-}
-
 const getAll = async(req, res, next) => {
     const result = await mongodb.getDb().db().collection('contacts').find();
     result.toArray().then((lists) => {
@@ -76,7 +72,6 @@ const deleteContact = async (req, res) => {
 };
   
 module.exports = {
-  getData, 
   getAll, 
   getSingle,
   createContact,
