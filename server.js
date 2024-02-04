@@ -3,12 +3,19 @@ const app = express();
 const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
+const cors = require('cors');
 
 app.use(express.json())
     .use(express.urlencoded({ extended: true }))
     .use(bodyParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      })
     .use('/', require('./routes'))
-    .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+    .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+    .use(cors())
+
     
 const port = process.env.PORT || 3000
 
