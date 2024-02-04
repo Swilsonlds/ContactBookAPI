@@ -83,12 +83,12 @@ content-Type: application/json
 ###
 
 # Testing edit contact on production server
-PUT https://w02personalassignment.onrender.com/contacts/65b5c91bdf66b9a17673effe HTTP/1.1
+PUT https://w02personalassignment.onrender.com/contacts/65be8e2686435bd930b57f3d HTTP/1.1
 content-Type: application/json
 
 {
-    "firstName": "Richarddd",
-    "lastName": "Wilson",
+    "firstName": "Not",
+    "lastName": "Jmoney",
     "email": "William@gmail.com",
     "favoriteColor": "Green",
     "birthday": "05/13/2023"
@@ -97,7 +97,7 @@ content-Type: application/json
 ###
 
 # Testing delete contact on production server
-DELETE https://w02personalassignment.onrender.com/contacts/65b5ca7e1e87215a9794823c HTTP/1.1
+DELETE https://w02personalassignment.onrender.com/contacts/65be8e2686435bd930b57f3d HTTP/1.1
 
 ###
 
