@@ -8,7 +8,6 @@ app.use(express.json())
     .use(express.urlencoded({ extended: true }))
     .use(bodyParser.json())
     .use('/', require('./routes'))
-    .use('/', require('./routes/contacts'))
     .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     
 const port = process.env.PORT || 3000
